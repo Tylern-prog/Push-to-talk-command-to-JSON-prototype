@@ -51,7 +51,7 @@ sudo apt-get install python3-venv libportaudio2 portaudio19-dev portaudio19-doc 
 
 python3 -m virtenv virtenv
 
-source .virtend/bin/activate
+source virtenv/bin/activate
 
 pip install -U pip
 
@@ -75,8 +75,9 @@ Link: https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF
 NOTE: whisper model will download at runtime
 
 ### Running the app
-1. In terminal run: 'export LLM_GGUF_PATH="/path/to/model.gguf"'
-2. execute: python3 main.py
-3. hold the the "hold to talk" button and give a command
+1. Terminal: 'export LLM_GGUF_PATH="/path/to/model.gguf"'
+2. Terminal: 'source virtenv/bin/activate' 
+3. execute: python3 main.py
+4. hold the the "hold to talk" button and give a command
 
 
